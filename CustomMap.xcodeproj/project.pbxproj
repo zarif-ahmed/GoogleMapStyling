@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		B21126C9AE21212DFBFF3AED /* Pods_CustomMap.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4BB709C0E8903AE3E310A1AD /* Pods_CustomMap.framework */; };
 		CC52F6921E4A0B7C0018339D /* style.json in Resources */ = {isa = PBXBuildFile; fileRef = CC52F6911E4A0B7C0018339D /* style.json */; };
-		CC6074971E572EB3002738D3 /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = CC6074961E572EB3002738D3 /* README.md */; };
+		CC6074991E5739B3002738D3 /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = CC6074981E5739B3002738D3 /* README.md */; };
 		CC92C62B1E4A07D4008A8440 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC92C62A1E4A07D4008A8440 /* AppDelegate.swift */; };
 		CC92C62D1E4A07D4008A8440 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC92C62C1E4A07D4008A8440 /* ViewController.swift */; };
 		CC92C6301E4A07D4008A8440 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CC92C62E1E4A07D4008A8440 /* Main.storyboard */; };
@@ -22,7 +22,7 @@
 		2815B0E6AE7F1B574B11B17A /* Pods-CustomMap.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CustomMap.release.xcconfig"; path = "Pods/Target Support Files/Pods-CustomMap/Pods-CustomMap.release.xcconfig"; sourceTree = "<group>"; };
 		4BB709C0E8903AE3E310A1AD /* Pods_CustomMap.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CustomMap.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CC52F6911E4A0B7C0018339D /* style.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = style.json; sourceTree = "<group>"; };
-		CC6074961E572EB3002738D3 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		CC6074981E5739B3002738D3 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		CC92C6271E4A07D4008A8440 /* CustomMap.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CustomMap.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CC92C62A1E4A07D4008A8440 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CC92C62C1E4A07D4008A8440 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -55,6 +55,7 @@
 		CC92C61E1E4A07D4008A8440 = {
 			isa = PBXGroup;
 			children = (
+				CC6074981E5739B3002738D3 /* README.md */,
 				CC92C6291E4A07D4008A8440 /* CustomMap */,
 				CC92C6281E4A07D4008A8440 /* Products */,
 				E6E3132EBF89B343E276E081 /* Pods */,
@@ -80,7 +81,6 @@
 				CC92C6331E4A07D4008A8440 /* LaunchScreen.storyboard */,
 				CC92C6361E4A07D4008A8440 /* Info.plist */,
 				CC52F6911E4A0B7C0018339D /* style.json */,
-				CC6074961E572EB3002738D3 /* README.md */,
 			);
 			path = CustomMap;
 			sourceTree = "<group>";
@@ -218,7 +218,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CC6074971E572EB3002738D3 /* README.md in Sources */,
+				CC6074991E5739B3002738D3 /* README.md in Sources */,
 				CC92C62D1E4A07D4008A8440 /* ViewController.swift in Sources */,
 				CC92C62B1E4A07D4008A8440 /* AppDelegate.swift in Sources */,
 			);
