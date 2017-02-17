@@ -1,5 +1,7 @@
 # Google Maps Styling
 
+- The sample project walks you through to the steps involved in loading a custom map styling to google maps.
+
 - Follow these steps to install the sdk: [https://developers.google.com/maps/documentation/ios-sdk/start]
 - Once the sdk was setup, I started off my research on the map customization.
     After about a few minutes of surfing, I came across the style reference section of google maps [https://developers.google.com/maps/documentation/ios-sdk/style-reference]. 
@@ -16,29 +18,29 @@
 
 
 ```
-override func loadView() {
-let camera = GMSCameraPosition.camera(withLatitude: -33.86, longitude: 151.20, zoom: 14.0)
-let mapView = GMSMapView.map(withFrame: CGRect.zero, camera: camera)
+    override func loadView() {
+        let camera = GMSCameraPosition.camera(withLatitude: -33.86, longitude: 151.20, zoom: 14.0)
+        let mapView = GMSMapView.map(withFrame: CGRect.zero, camera: camera)
  
-do {
-// Set the map style by passing the URL of the local file.
-if let styleURL = Bundle.main.url(forResource: "style", withExtension: "json") {
-mapView.mapStyle = try GMSMapStyle(contentsOfFileURL: styleURL)
-} else {
-NSLog("Unable to find style.json")
-}
-} catch {
-NSLog("One or more of the map styles failed to load. \(error)")
-}
+        do {
+            // Set the map style by passing the URL of the local file.
+            if let styleURL = Bundle.main.url(forResource: "style", withExtension: "json") {
+            mapView.mapStyle = try GMSMapStyle(contentsOfFileURL: styleURL)
+            } else {
+            NSLog("Unable to find style.json")
+            }
+        } catch {
+            NSLog("One or more of the map styles failed to load. \(error)")
+            }
 
-self.view = mapView
-}
-}
+        self.view = mapView
+        }
+    }
 ```
 
 
 - NOTE:
--The sample project doesn't include an API key for GoogleMaps SDK. Make sure you get the key and set it in AppDelegate. 
--The steps for doing this can be found in the link https://developers.google.com/maps/documentation/ios-sdk/start
+- The sample project doesn't include an API key for GoogleMaps SDK. Make sure you get the key and set it in AppDelegate. 
+- The steps for doing this can be found in the link https://developers.google.com/maps/documentation/ios-sdk/start
 
 
